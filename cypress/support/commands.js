@@ -7,8 +7,8 @@ Cypress.Commands.add('preencherFormsCompleto', function(name, lastName, email, c
     
      cy.get('textarea[id="open-text-area"]').click().should('be.visible').type(comentario)
 
-     cy.get('button[type="submit"]').click()
-     // cy.get('.button').click()
+    //  cy.get('button[type="submit"]').click()
+     cy.get('.button').click()
 
      cy.get('.success').should('be.visible')
 })
